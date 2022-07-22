@@ -1,32 +1,39 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include <iostream>
+using namespace std;
 
-# Precompiled Headers
-*.gch
-*.pch
+int main()
+{
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+	int begin1, vertical1, wide2,length3;
+	cout << "Enter a position where rectengle begin horizontally" << endl;
+	cin >> begin1;
+	cout << "Enter a position where rectengle begin vertically" << endl;
+	cin >> vertical1;
+	cout << "Enter a rectangle wide" << endl;
+	cin >> wide2;
+	cout << "Enter a rectange length" << endl;
+	cin >> length3;
+	
+	for (int i = 1; i <= vertical1; i++) {// this for loop doing vertical begin
+		cout << "\n";
+	  }
 
-# Fortran module files
-*.mod
-*.smod
+	  for(int i=0;i<length3;i++){
+		  
+		  cout << "\n";// this line makes it go down to a bottom line in each loop and determines the length.
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+		  for (int i = 1; i <= begin1; i++) {// this for loop doing horizontal begin
+			  cout << " ";
+		  }
 
-# Executables
-*.exe
-*.out
-*.app
+
+	     for (int i=0; i < wide2; i++) {// it makes the wide
+		cout << "*";
+         }
+
+
+	  }
+	
+}
+
